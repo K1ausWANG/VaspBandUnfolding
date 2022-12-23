@@ -272,7 +272,7 @@ class vaspwfc(object):
         Generate the G-vectors that satisfies the following relation
             (G + k)**2 / 2 < ENCUT
         '''
-        assert 1 <= ikpt <= self._nbkpts,  'Invalid kpoint index!'
+        assert 1 <= ikpt <= self._nkpts,  'Invalid kpoint index!'
 
         kvec = self._kvecs[ikpt-1]
         # force_Gamma: consider gamma-only case regardless of the actual setting
